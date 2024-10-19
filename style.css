@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'poppins', sans-serif;
+    background-color: #202020;
+    color: #fff;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4vmin;
+}
+
+h1 {
+    position: fixed;
+    top: 2rem;
+}
+
+.show {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    font-size: 1.3em;
+    color: #008000;
+    text-shadow: 0 0 1rem #008000;
+}
+
+.thePopUp {
+    width: 11em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1em;
+    background-color: #fff;
+    padding: 3vmin 4.5vmin;
+    border-radius: 1em;
+    z-index: 4;
+    text-align: center;
+}
+
+.hide {
+    display: none;
+}
+
+.hider {
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#newGameBtn,
+#winner {
+    position: relative;
+    z-index: 3;
+}
+
+.container {
+    height: 80vmin;
+    width: 80vmin;
+    max-height: 384px;
+    max-width: 384px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.box {
+    height: 25vmin;
+    width: 25vmin;
+    max-height: 124px;
+    max-width: 124px;
+    font-size: 10vmin;
+    border: none;
+    border-radius: 10px;
+    background-color: #ddd;
+    font-weight: bold;
+}
+
+#resetBtn,
+#newGameBtn {
+    background-color: #d2691e;
+    color: #fff;
+    padding: 7px 10px;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+/* #info {
+    font-size: 1rem;
+} */
+
+.turn {
+    text-shadow: 0 0 5px #fff;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    background-color: #353535;
+    width: 100%;
+    text-align: center;
+    padding: 0.4rem 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+}

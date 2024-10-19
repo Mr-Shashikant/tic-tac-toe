@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe game</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="hider hide"></div>
+    <div id="winnerPopUp" class="hide">
+        <div class="thePopUp">
+            <p id="winner"><b>Congratulations!</b> <br>The winner is <b>Player O</b></p>
+            <button type="button" id="newGameBtn">New Game</button>
+        </div>
+    </div>
+    <main>
+        <h1>Tic Tac Toe <!--<span id="info"><i class='bx bx-info-circle'></i></span>--></h1>
+
+        <div class="turn">Turn: Player 1</div>
+        <div class="container">
+            <button type="button" class="box"></button>
+            <button type="button" class="box"></button>
+            <button type="button" class="box"></button>
+            <button type="button" class="box"></button>
+            <button type="button" class="box"></button>
+            <button type="button" class="box"></button>
+            <button type="button" class="box"></button>
+            <button type="button" class="box"></button>
+            <button type="button" class="box"></button>
+        </div>
+        <button type="button" id="resetBtn">Reset Game</button>
+    </main>
+
+    <footer>
+        <div>Made with ♥ by <a href="https://github.com/Mr-Shashikant">Shashikant</a></div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
