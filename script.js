@@ -23,8 +23,8 @@ let tracker = 0;
 boxes.forEach((val) => {
   val.addEventListener("click", () => {
     if (turnO) {
-      val.style.color = "red";
-      val.style.textShadow = "0 0 20px red";
+      val.style.color = "#c30000";
+      val.style.textShadow = "0 0 20px #c30000";
       val.innerHTML = "O";
       turnO = false;
     } else {
